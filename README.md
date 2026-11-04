@@ -9,7 +9,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 | ![Camera alert](images/map-camera-alert.png) | ![Live traffic](images/map-live-traffic.png) | ![Overspeed](images/map-overspeed-en.png) |
 | ![Settings](images/map-settings-fa.png) | ![Settings in English](images/map-settings-en.png) | ![Overspeed in Russian](images/map-overspeed-ru.png) |
 | ![Web admin](images/web-admin.png) | ![Persian camera menu](images/menu-persian.png) | ![Map Builder](images/mapbuilder-window.png) |
-| ![Kaliningrad map built with Map Builder](images/mapbuilder-kaliningrad.png) | | |
+| ![Kaliningrad map built with Map Builder](images/mapbuilder-kaliningrad.png) | ![Moscow, the ready map of Russia](images/map-russia-moscow.png) | |
 
 **Download:** [Releases](../../releases/latest) · firmware, ready maps (Iran, Russia), Map Builder for Windows. · **[Donate](#donate)**
 
