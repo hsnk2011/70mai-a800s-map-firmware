@@ -25,12 +25,19 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 ### ⚠️ پیش از نصب بخوانید
 - فقط برای **A800S (DR2800)**. روی مدل دیگری فلش نکنید.
 - این فریمور رسمی نیست. با مسئولیت خودتان نصب کنید. برای برگشت یا وقتی دوربین بالا نمی‌آید، فایل بازیابی (فریمور رسمی) را فلش کنید؛ بخش «بازیابی» را ببینید.
-- نسخه‌های تا **v1.9** در رانندگی واقعی تست شده‌اند. بخش‌های تازهٔ **v2.0 و v2.1** (منوی فارسی، سه زبان، لوگو، راه‌اندازی دوباره) روی کامپیوتر و شبیه‌ساز تست شده‌اند و هنوز روی دوربین واقعی امتحان نشده‌اند.
+- نسخه‌های تا **v2.1** در رانندگی واقعی تست شده‌اند (نقشه، هشدارها، سه زبان، صفحهٔ وب، راه‌اندازی دوباره). تغییرهای **v2.2** (مدیر تازهٔ وای‌فای، ذخیرهٔ تنظیمات دوربین، ترافیک زنده از CDN بلد) روی کامپیوتر و شبیه‌ساز تست شده‌اند؛ گذاشتن لوگو هنوز روی دوربین امتحان نشده.
+
+### تازه‌های v2.2
+- **وای‌فای:** منوی دوربین، تنظیمات نقشه و صفحهٔ وب حالت وای‌فای را همان لحظه عوض می‌کنند؛ چند فشار پشت سر هم فقط آخرینش اجرا می‌شود و منو دیگر گیر نمی‌کند. وضعیت (در حال تغییر، دنبال هات‌اسپات) در «اطلاعات دستگاه» و صفحهٔ وب.
+- **تنظیمات دوربین از صفحهٔ وب** دیگر با خاموش و روشن شدن برنمی‌گردند.
+- **بخش لوگو در صفحهٔ وب** دیده می‌شود (گوشی نسخهٔ قدیمی صفحه را از حافظه می‌خواند).
+- **ترافیک زنده** دوباره می‌آید: بلد کاشی‌ها را به CDN سوتون منتقل کرده بود.
+- **سازندهٔ نقشه** بعد از قطع شدن از همان جا ادامه می‌دهد.
 
 ### دانلود (صفحهٔ Releases)
 | فایل | چیست |
 |---|---|
-| `70mai-A800S-map-firmware-v2.1.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.2.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip` و `iran-map-2-z16.zip` | نقشهٔ آمادهٔ ایران و دوربین‌های کنترل سرعت (۱۱٬۱۹۶ دوربین) |
 | `russia-map-*.zip` | نقشهٔ آمادهٔ روسیه (دوربین‌ها از OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | برنامهٔ ویندوز برای ساختن نقشهٔ هر کشور |
@@ -53,7 +60,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 | زبان نقشه و هشدارها جدا از منو | ❌ | ✅ فارسی / English / Русский |
 | لوگوی روشن و خاموش شدن دلخواه | ❌ | ✅ هر عکسی، از صفحهٔ وب |
 | راه‌اندازی دوباره از منو | ❌ فقط دکمهٔ پاور | ✅ از نقشه و صفحهٔ وب |
-| وای‌فای | فقط AP برای اپ | AP یا اتصال به هات‌اسپات گوشی (STA) |
+| وای‌فای | فقط AP برای اپ | AP یا اتصال به هات‌اسپات گوشی (STA)؛ تغییر از منو، نقشه یا صفحهٔ وب همان لحظه |
 | فرمت اجباری کارت وقتی فایل غیرویدیویی زیاد است | ❌ ضبط تا فرمت متوقف می‌شود | ✅ حذف شد؛ پوشهٔ نقشه مشکلی ندارد |
 | شروع دوبارهٔ ضبط بعد از پارک طولانی | گاهی شروع نمی‌شود | ✅ نگهبان ضبط |
 | telnet روت بدون رمز | ⚠️ همیشه روشن | ✅ خاموش |
@@ -108,7 +115,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 | زبان نقشه و صداها | مثل منوی دوربین، یا یک زبان ثابت | مثل منو / فارسی / English / Русский |
 | پایش پارک تمام‌شب | خاموش شدن ۵ دقیقه بعد از پارک، یا تا صبح | خاموش / روشن |
 | شروع ضبط بعد از پارک | اگر ضبط خودش شروع نشد، شروعش کند | روشن / خاموش |
-| حالت وای‌فای | اپ 70mai یا اینترنت هات‌اسپات | AP / STA (از روشن شدن بعدی) |
+| حالت وای‌فای | اپ 70mai یا اینترنت هات‌اسپات | AP / STA (همان لحظه) |
 | راه‌اندازی دوباره | ضبط بسته و دوربین دوباره روشن می‌شود | دو بار OK در ۵ ثانیه |
 | اطلاعات دستگاه | نسخه، GPS، وای‌فای، ترافیک، دوربین‌ها، حافظه، آدرس صفحهٔ وب | — |
 
@@ -149,7 +156,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 **سازندهٔ نقشه (ویندوز)**
 - `70mai-MapBuilder.exe` را اجرا کنید (نصب لازم نیست). کشور یا منطقه، بیشترین زوم، زبان نام خیابان‌ها و کارت حافظه را انتخاب کنید و «ساختن نقشه» را بزنید.
 - آخرین دادهٔ OpenStreetMap دانلود، نقشه روی کامپیوتر ساخته و در `MAP` کارت نوشته می‌شود. دوربین‌های سرعت از OpenStreetMap می‌آیند.
-- کشورهای بزرگ (مثل روسیه) هم ساخته می‌شوند؛ چند ساعت طول می‌کشد و چند ده گیگابایت جای خالی روی کامپیوتر می‌خواهد.
+- کشورهای بزرگ (مثل روسیه) هم ساخته می‌شوند؛ چند ساعت طول می‌کشد و چند ده گیگابایت جای خالی روی کامپیوتر می‌خواهد. اگر کامپیوتر وسط کار خاموش شد، دوباره «ساختن نقشه» را بزنید: زوم‌های تمام‌شده نگه داشته می‌شوند.
 
 **بازیابی و برگشت به فریمور رسمی**
 - فایل `70mai-A800S-official-2.2.31ww-recovery.zip` فریمور رسمی 2.2.31ww برای بازیابی است.
@@ -175,12 +182,19 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### ⚠️ Read before installing
 - **A800S (DR2800) only.** Do not flash it on another model.
 - This is not official firmware; install it at your own risk. To go back, or if the camera no longer starts, flash the recovery file (the official firmware); see "Recovery".
-- Versions up to **v1.9** were tested on real drives. The new parts of **v2.0 and v2.1** (Persian menu, three languages, logo, restart) were tested on a PC and in an emulator, not yet on a real camera.
+- Versions up to **v2.1** were tested on real drives (map, alerts, three languages, web page, restart). The changes in **v2.2** (new Wi-Fi manager, saving camera settings, live traffic from Balad's CDN) were tested on a PC and in an emulator; setting a logo has not been tried on a camera yet.
+
+### New in v2.2
+- **Wi-Fi:** the camera menu, the map's settings and the web page switch Wi-Fi at once; a burst of presses applies only the last one and the menu no longer hangs. Status (switching, looking for the hotspot) in Device info and on the web page.
+- **Camera settings from the web page** no longer revert after a power cycle.
+- **The logo section of the web page** shows (phones kept an old copy of the page).
+- **Live traffic** works again: Balad moved its tiles to the Sotoon CDN.
+- **Map Builder** continues where it stopped.
 
 ### Downloads (Releases page)
 | File | What it is |
 |---|---|
-| `70mai-A800S-map-firmware-v2.1.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.2.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Ready map of Iran with its speed cameras (11,196) |
 | `russia-map-*.zip` | Ready map of Russia (cameras from OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Windows app that builds the map of any country |
@@ -203,7 +217,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Map and alert language apart from the menu | ❌ | ✅ Persian / English / Russian |
 | Your own power-on and power-off logo | ❌ | ✅ any picture, from the web page |
 | Restart from the menu | ❌ power button only | ✅ from the map and the web page |
-| Wi-Fi | AP for the app only | AP, or join a phone hotspot (STA) |
+| Wi-Fi | AP for the app only | AP, or join a phone hotspot (STA); switch from the menu, map or web page at once |
 | Forced card format when there are many non-video files | ❌ recording stops until you format | ✅ removed; the map folder is fine |
 | Recording restarts after long parking | sometimes it doesn't | ✅ recording guard |
 | Root telnet without a password | ⚠️ always on | ✅ off |
@@ -258,7 +272,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Map and voice language | Like the camera menu, or a fixed language | like menu / Persian / English / Russian |
 | All-night parking monitor | Power off 5 min after parking, or stay on | off / on |
 | Start recording after parking | Starts recording if it didn't start by itself | on / off |
-| Wi-Fi mode | 70mai app or hotspot internet | AP / STA (from next power-on) |
+| Wi-Fi mode | 70mai app or hotspot internet | AP / STA (at once) |
 | Restart | Closes the recording and restarts the camera | OK twice within 5 s |
 | Device info | Version, GPS, Wi-Fi, traffic, cameras, memory, web page address | — |
 
@@ -299,7 +313,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 **Map Builder (Windows)**
 - Run `70mai-MapBuilder.exe` (no install). Pick a country or region, the highest zoom, the street-name language and the memory card, then "Build the map".
 - It downloads the latest OpenStreetMap data, draws the map on the PC and writes it to `MAP` on the card. Speed cameras come from OpenStreetMap.
-- Big countries (like Russia) work too; they take hours and tens of GB of free space on the PC.
+- Big countries (like Russia) work too; they take hours and tens of GB of free space on the PC. If the PC turns off part way, press "Build the map" again: finished zoom levels are kept.
 
 **Recovery and going back to the official firmware**
 - `70mai-A800S-official-2.2.31ww-recovery.zip` is the official 2.2.31ww firmware for recovery.
@@ -323,12 +337,19 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### ⚠️ Прочтите перед установкой
 - **Только для A800S (DR2800).** Не прошивайте другую модель.
 - Прошивка неофициальная; устанавливайте на свой риск. Чтобы вернуться, или если камера больше не запускается, прошейте файл восстановления (официальная прошивка); см. «Восстановление».
-- Версии до **v1.9** проверены в реальных поездках. Новые части **v2.0 и v2.1** (персидское меню, три языка, логотип, перезагрузка) проверены на ПК и в эмуляторе, но ещё не на настоящей камере.
+- Версии до **v2.1** проверены в реальных поездках (карта, оповещения, три языка, страница управления, перезагрузка). Изменения **v2.2** (новый менеджер Wi-Fi, сохранение настроек камеры, пробки через CDN Balad) проверены на ПК и в эмуляторе; установка логотипа на камере ещё не проверялась.
+
+### Новое в v2.2
+- **Wi-Fi:** меню камеры, настройки карты и страница управления переключают Wi-Fi сразу; из серии нажатий выполняется только последнее, меню больше не зависает. Состояние (переключение, поиск точки доступа) — в «Сведениях» и на странице.
+- **Настройки камеры со страницы управления** больше не сбрасываются после выключения.
+- **Раздел логотипа** на странице управления виден (телефоны держали старую копию страницы).
+- **Пробки** снова работают: Balad перенёс тайлы на CDN Sotoon.
+- **Map Builder** продолжает с места остановки.
 
 ### Загрузки (страница Releases)
 | Файл | Что это |
 |---|---|
-| `70mai-A800S-map-firmware-v2.1.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.2.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Готовая карта Ирана с камерами (11 196) |
 | `russia-map-*.zip` | Готовая карта России (камеры из OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Программа для Windows: карта любой страны |
@@ -351,7 +372,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Язык карты и оповещений отдельно от меню | ❌ | ✅ персидский / английский / русский |
 | Свой логотип включения и выключения | ❌ | ✅ любая картинка, со страницы управления |
 | Перезагрузка из меню | ❌ только кнопкой питания | ✅ с карты и со страницы управления |
-| Wi-Fi | только точка доступа для приложения | точка доступа или подключение к телефону (STA) |
+| Wi-Fi | только точка доступа для приложения | точка доступа или подключение к телефону (STA); переключение из меню, карты или страницы сразу |
 | Принудительное форматирование карты при большом объёме не-видео файлов | ❌ запись стоит до форматирования | ✅ убрано; папка карты не мешает |
 | Запись после долгой стоянки | иногда не начинается | ✅ страж записи |
 | Root telnet без пароля | ⚠️ всегда включён | ✅ выключен |
@@ -406,7 +427,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Язык карты и голоса | Как в меню камеры или постоянный | как в меню / персидский / английский / русский |
 | Парковочный режим всю ночь | Выключение через 5 минут стоянки или работа всю ночь | выкл / вкл |
 | Запуск записи после стоянки | Запускает запись, если она не началась сама | вкл / выкл |
-| Режим Wi-Fi | Приложение 70mai или интернет телефона | AP / STA (со следующего включения) |
+| Режим Wi-Fi | Приложение 70mai или интернет телефона | AP / STA (сразу) |
 | Перезагрузка | Закрывает запись и перезапускает камеру | OK дважды за 5 с |
 | Сведения об устройстве | Версия, GPS, Wi-Fi, пробки, камеры, память, адрес страницы | — |
 
@@ -447,7 +468,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 **Map Builder (Windows)**
 - Запустите `70mai-MapBuilder.exe` (установка не нужна). Выберите страну или регион, наибольший масштаб, язык названий улиц и карту памяти, затем «Собрать карту».
 - Программа загружает свежие данные OpenStreetMap, рисует карту на ПК и записывает её в `MAP` на карте памяти. Камеры скорости берутся из OpenStreetMap.
-- Большие страны (например, Россия) тоже собираются; это занимает часы и десятки ГБ свободного места на ПК.
+- Большие страны (например, Россия) тоже собираются; это занимает часы и десятки ГБ свободного места на ПК. Если ПК выключился посреди работы, снова нажмите «Собрать карту»: готовые масштабы сохраняются.
 
 **Восстановление и возврат к официальной прошивке**
 - `70mai-A800S-official-2.2.31ww-recovery.zip` — официальная прошивка 2.2.31ww для восстановления.
