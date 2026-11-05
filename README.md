@@ -25,7 +25,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 ### ⚠️ پیش از نصب بخوانید
 - فقط برای **A800S (DR2800)**. روی مدل دیگری فلش نکنید.
 - این فریمور رسمی نیست. با مسئولیت خودتان نصب کنید. برای برگشت یا وقتی دوربین بالا نمی‌آید، فایل بازیابی (فریمور رسمی) را فلش کنید؛ بخش «بازیابی» را ببینید.
-- نسخه‌های تا **v2.1** در رانندگی واقعی تست شده‌اند (نقشه، هشدارها، سه زبان، صفحهٔ وب، راه‌اندازی دوباره). تغییرهای **v2.2** (مدیر تازهٔ وای‌فای، ذخیرهٔ تنظیمات دوربین، ترافیک زنده از CDN بلد) روی کامپیوتر و شبیه‌ساز تست شده‌اند؛ گذاشتن لوگو هنوز روی دوربین امتحان نشده.
+- همهٔ نسخه‌ها روی دوربین در خودرو و در رانندگی واقعی تست شده‌اند، از جمله لوگوی روشن و خاموش شدن.
 
 ### تازه‌های v2.2
 - **وای‌فای:** منوی دوربین، تنظیمات نقشه و صفحهٔ وب حالت وای‌فای را همان لحظه عوض می‌کنند؛ چند فشار پشت سر هم فقط آخرینش اجرا می‌شود و منو دیگر گیر نمی‌کند. وضعیت (در حال تغییر، دنبال هات‌اسپات) در «اطلاعات دستگاه» و صفحهٔ وب.
@@ -182,7 +182,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### ⚠️ Read before installing
 - **A800S (DR2800) only.** Do not flash it on another model.
 - This is not official firmware; install it at your own risk. To go back, or if the camera no longer starts, flash the recovery file (the official firmware); see "Recovery".
-- Versions up to **v2.1** were tested on real drives (map, alerts, three languages, web page, restart). The changes in **v2.2** (new Wi-Fi manager, saving camera settings, live traffic from Balad's CDN) were tested on a PC and in an emulator; setting a logo has not been tried on a camera yet.
+- Every version has been tested on the camera in a car, on real drives, including the power-on and power-off logo.
 
 ### New in v2.2
 - **Wi-Fi:** the camera menu, the map's settings and the web page switch Wi-Fi at once; a burst of presses applies only the last one and the menu no longer hangs. Status (switching, looking for the hotspot) in Device info and on the web page.
@@ -337,7 +337,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### ⚠️ Прочтите перед установкой
 - **Только для A800S (DR2800).** Не прошивайте другую модель.
 - Прошивка неофициальная; устанавливайте на свой риск. Чтобы вернуться, или если камера больше не запускается, прошейте файл восстановления (официальная прошивка); см. «Восстановление».
-- Версии до **v2.1** проверены в реальных поездках (карта, оповещения, три языка, страница управления, перезагрузка). Изменения **v2.2** (новый менеджер Wi-Fi, сохранение настроек камеры, пробки через CDN Balad) проверены на ПК и в эмуляторе; установка логотипа на камере ещё не проверялась.
+- Все версии проверены на камере в машине, в реальных поездках, включая логотип включения и выключения.
 
 ### Новое в v2.2
 - **Wi-Fi:** меню камеры, настройки карты и страница управления переключают Wi-Fi сразу; из серии нажатий выполняется только последнее, меню больше не зависает. Состояние (переключение, поиск точки доступа) — в «Сведениях» и на странице.
