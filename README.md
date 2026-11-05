@@ -25,9 +25,15 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 ### ⚠️ پیش از نصب بخوانید
 - فقط برای **A800S (DR2800)**. روی مدل دیگری فلش نکنید.
 - این فریمور رسمی نیست. با مسئولیت خودتان نصب کنید. برای برگشت یا وقتی دوربین بالا نمی‌آید، فایل بازیابی (فریمور رسمی) را فلش کنید؛ بخش «بازیابی» را ببینید.
-- همهٔ نسخه‌ها روی دوربین در خودرو و در رانندگی واقعی تست شده‌اند، از جمله لوگوی روشن و خاموش شدن.
+- همهٔ نسخه‌ها تا v2.3 روی دوربین در خودرو و در رانندگی واقعی تست شده‌اند، از جمله لوگوی روشن و خاموش شدن. v2.4 تازه است و در حال تست.
 
-### تازه‌های v2.2
+### تازه‌های v2.4
+- **هشدارهای هوشمند رانندگی (ADAS):** کلید اصلی در صفحهٔ وب. در فریمور اصلی این کلید پیش‌فرض خاموش است و تا خاموش باشد، هشدار خروج از خط، نزدیکی به خودروی جلو و حرکت خودروی جلو کار نمی‌کنند، حتی اگر خودشان روشن نشان داده شوند. صفحهٔ وب نشان می‌دهد دوربین کالیبره شده یا نه؛ کالیبره کردن از منوی دوربین.
+- **telnet از صفحهٔ وب** روشن و خاموش می‌شود (برای عیب‌یابی؛ پیش‌فرض خاموش).
+- **تنظیمات پارک در صفحهٔ وب** اسم و توضیح روشن دارند: «پارک: دوربین تا صبح روشن بماند»، «ضبط ضربه در پارک» و «حساسیت ضربه در رانندگی».
+- **لوگو (از v2.3):** ذخیرهٔ لوگو روی بعضی دوربین‌ها خطای `File exists` می‌داد. حالا فایل لوگو درجا بازنویسی می‌شود و نتیجه در `MAP\logs\logo.log` نوشته می‌شود.
+
+### در v2.2
 - **وای‌فای:** منوی دوربین، تنظیمات نقشه و صفحهٔ وب حالت وای‌فای را همان لحظه عوض می‌کنند؛ چند فشار پشت سر هم فقط آخرینش اجرا می‌شود و منو دیگر گیر نمی‌کند. وضعیت (در حال تغییر، دنبال هات‌اسپات) در «اطلاعات دستگاه» و صفحهٔ وب.
 - **تنظیمات دوربین از صفحهٔ وب** دیگر با خاموش و روشن شدن برنمی‌گردند.
 - **بخش لوگو در صفحهٔ وب** دیده می‌شود (گوشی نسخهٔ قدیمی صفحه را از حافظه می‌خواند).
@@ -37,7 +43,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 ### دانلود (صفحهٔ Releases)
 | فایل | چیست |
 |---|---|
-| `70mai-A800S-map-firmware-v2.2.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.4.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip` و `iran-map-2-z16.zip` | نقشهٔ آمادهٔ ایران و دوربین‌های کنترل سرعت (۱۱٬۱۹۶ دوربین) |
 | `russia-map-*.zip` | نقشهٔ آمادهٔ روسیه (دوربین‌ها از OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | برنامهٔ ویندوز برای ساختن نقشهٔ هر کشور |
@@ -63,7 +69,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 | وای‌فای | فقط AP برای اپ | AP یا اتصال به هات‌اسپات گوشی (STA)؛ تغییر از منو، نقشه یا صفحهٔ وب همان لحظه |
 | فرمت اجباری کارت وقتی فایل غیرویدیویی زیاد است | ❌ ضبط تا فرمت متوقف می‌شود | ✅ حذف شد؛ پوشهٔ نقشه مشکلی ندارد |
 | شروع دوبارهٔ ضبط بعد از پارک طولانی | گاهی شروع نمی‌شود | ✅ نگهبان ضبط |
-| telnet روت بدون رمز | ⚠️ همیشه روشن | ✅ خاموش |
+| telnet روت بدون رمز | ⚠️ همیشه روشن | ✅ خاموش؛ روشن کردن از صفحهٔ وب |
 | اسکریپت `autorun_*.sh` از ریشهٔ کارت | ❌ | ✅ موقع روشن شدن اجرا می‌شود |
 | لاگ عیب‌یابی روی کارت | ❌ | ✅ `MAP\logs` |
 
@@ -121,7 +127,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 
 **صفحهٔ مدیریت از مرورگر گوشی**
 - به وای‌فای دوربین وصل شوید و `http://192.168.1.1/map/` را باز کنید. در حالت هات‌اسپات، آدرس در «اطلاعات دستگاه» نوشته شده.
-- وضعیت (سرعت، ضبط، GPS، کارت، وای‌فای)، همهٔ تنظیمات نقشه، تنظیمات مهم دوربین، نام و رمز هات‌اسپات، پخش و دانلود ویدیوها، لاگ‌ها، لوگو، راه‌اندازی دوباره. زبان با دکمه‌های فا / EN / RU.
+- وضعیت (سرعت، ضبط، GPS، کارت، وای‌فای)، همهٔ تنظیمات نقشه، تنظیمات مهم دوربین (با کلید ADAS و تنظیمات پارک)، نام و رمز هات‌اسپات، telnet، پخش و دانلود ویدیوها، لاگ‌ها، لوگو، راه‌اندازی دوباره. زبان با دکمه‌های فا / EN / RU.
 - رمز ورود ندارد؛ هر کس به وای‌فای دوربین وصل باشد به آن دسترسی دارد. حذف فایل ندارد.
 
 **یادآور استراحت**
@@ -165,7 +171,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 - اگر بعدش منو ترکی شد (فارسی جای ترکی بود)، زبان را از منو عوض کنید.
 
 **لاگ و گزارش مشکل**
-- `MAP\logs` روی کارت: `mapd_NNN.log` (نقشه و هشدارها)، `live_NNN.log` (ترافیک)، `wifi.log`. برای گزارش مشکل همین پوشه را بفرستید.
+- `MAP\logs` روی کارت: `mapd_NNN.log` (نقشه و هشدارها)، `live_NNN.log` (ترافیک)، `wifi.log`، `logo.log`. برای گزارش مشکل همین پوشه را بفرستید.
 
 **حمایت:** اگر این پروژه به کارتان آمد، می‌توانید با رمزارز [حمایت کنید](#donate).
 
@@ -182,9 +188,15 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### ⚠️ Read before installing
 - **A800S (DR2800) only.** Do not flash it on another model.
 - This is not official firmware; install it at your own risk. To go back, or if the camera no longer starts, flash the recovery file (the official firmware); see "Recovery".
-- Every version has been tested on the camera in a car, on real drives, including the power-on and power-off logo.
+- Every version up to v2.3 has been tested on the camera in a car, on real drives, including the power-on and power-off logo. v2.4 is new and being tested.
 
-### New in v2.2
+### New in v2.4
+- **Driver assistance alerts (ADAS):** a main switch on the web page. The official firmware ships with it off, and while it is off the lane departure, forward collision and car-ahead-moved alerts do nothing, even when they show as on. The web page also shows whether the camera is calibrated; calibrate from the camera menu.
+- **Telnet from the web page:** turn it on or off (for troubleshooting; off by default).
+- **Parking settings on the web page** have clear names and notes: "Parking: keep the camera on all night", "Record bumps while parked" and "Bump sensitivity while driving".
+- **Logo (since v2.3):** saving the logo gave `File exists` on some cameras. The logo file is now overwritten in place, and the result goes to `MAP\logs\logo.log`.
+
+### In v2.2
 - **Wi-Fi:** the camera menu, the map's settings and the web page switch Wi-Fi at once; a burst of presses applies only the last one and the menu no longer hangs. Status (switching, looking for the hotspot) in Device info and on the web page.
 - **Camera settings from the web page** no longer revert after a power cycle.
 - **The logo section of the web page** shows (phones kept an old copy of the page).
@@ -194,7 +206,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### Downloads (Releases page)
 | File | What it is |
 |---|---|
-| `70mai-A800S-map-firmware-v2.2.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.4.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Ready map of Iran with its speed cameras (11,196) |
 | `russia-map-*.zip` | Ready map of Russia (cameras from OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Windows app that builds the map of any country |
@@ -220,7 +232,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Wi-Fi | AP for the app only | AP, or join a phone hotspot (STA); switch from the menu, map or web page at once |
 | Forced card format when there are many non-video files | ❌ recording stops until you format | ✅ removed; the map folder is fine |
 | Recording restarts after long parking | sometimes it doesn't | ✅ recording guard |
-| Root telnet without a password | ⚠️ always on | ✅ off |
+| Root telnet without a password | ⚠️ always on | ✅ off; turn on from the web page |
 | `autorun_*.sh` scripts from the card root | ❌ | ✅ run at power-on |
 | Diagnostic logs on the card | ❌ | ✅ `MAP\logs` |
 
@@ -278,7 +290,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 
 **Admin page in your phone's browser**
 - Join the camera's Wi-Fi and open `http://192.168.1.1/map/`. On a hotspot, the address is in "Device info".
-- Status (speed, recording, GPS, card, Wi-Fi), all map settings, the main camera settings, hotspot name and password, play and download videos, logs, logo, restart. Language: the fa / EN / RU buttons.
+- Status (speed, recording, GPS, card, Wi-Fi), all map settings, the main camera settings (with the ADAS switch and parking settings), hotspot name and password, telnet, play and download videos, logs, logo, restart. Language: the fa / EN / RU buttons.
 - No password: anyone on the camera's Wi-Fi can use it. It can't delete files.
 
 **Rest reminder**
@@ -322,7 +334,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - If the menu is in Turkish afterwards (Persian used that slot), change the language in the menu.
 
 **Logs and reporting a problem**
-- `MAP\logs` on the card: `mapd_NNN.log` (map and alerts), `live_NNN.log` (traffic), `wifi.log`. Send this folder with a problem report.
+- `MAP\logs` on the card: `mapd_NNN.log` (map and alerts), `live_NNN.log` (traffic), `wifi.log`, `logo.log`. Send this folder with a problem report.
 
 **Support:** if this project is useful to you, you can [donate in crypto](#donate).
 
@@ -337,9 +349,15 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### ⚠️ Прочтите перед установкой
 - **Только для A800S (DR2800).** Не прошивайте другую модель.
 - Прошивка неофициальная; устанавливайте на свой риск. Чтобы вернуться, или если камера больше не запускается, прошейте файл восстановления (официальная прошивка); см. «Восстановление».
-- Все версии проверены на камере в машине, в реальных поездках, включая логотип включения и выключения.
+- Все версии до v2.3 проверены на камере в машине, в реальных поездках, включая логотип включения и выключения. v2.4 новая и сейчас проверяется.
 
-### Новое в v2.2
+### Новое в v2.4
+- **Помощь водителю (ADAS):** главный переключатель на странице управления. В официальной прошивке он выключен, и пока он выключен, предупреждения о выезде из полосы, о сближении и о начале движения впереди не работают, даже если показаны включёнными. Страница также показывает, откалибрована ли камера; калибровка — в меню камеры.
+- **Telnet со страницы управления:** включение и выключение (для диагностики; по умолчанию выключен).
+- **Настройки парковки на странице управления** получили понятные названия и пояснения: «Парковка: камера включена всю ночь», «Запись ударов на стоянке» и «Чувствительность к ударам в движении».
+- **Логотип (с v2.3):** сохранение логотипа на некоторых камерах давало `File exists`. Теперь файл логотипа перезаписывается на месте, а результат пишется в `MAP\logs\logo.log`.
+
+### В v2.2
 - **Wi-Fi:** меню камеры, настройки карты и страница управления переключают Wi-Fi сразу; из серии нажатий выполняется только последнее, меню больше не зависает. Состояние (переключение, поиск точки доступа) — в «Сведениях» и на странице.
 - **Настройки камеры со страницы управления** больше не сбрасываются после выключения.
 - **Раздел логотипа** на странице управления виден (телефоны держали старую копию страницы).
@@ -349,7 +367,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### Загрузки (страница Releases)
 | Файл | Что это |
 |---|---|
-| `70mai-A800S-map-firmware-v2.2.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.4.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Готовая карта Ирана с камерами (11 196) |
 | `russia-map-*.zip` | Готовая карта России (камеры из OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Программа для Windows: карта любой страны |
@@ -375,7 +393,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Wi-Fi | только точка доступа для приложения | точка доступа или подключение к телефону (STA); переключение из меню, карты или страницы сразу |
 | Принудительное форматирование карты при большом объёме не-видео файлов | ❌ запись стоит до форматирования | ✅ убрано; папка карты не мешает |
 | Запись после долгой стоянки | иногда не начинается | ✅ страж записи |
-| Root telnet без пароля | ⚠️ всегда включён | ✅ выключен |
+| Root telnet без пароля | ⚠️ всегда включён | ✅ выключен; включается со страницы управления |
 | Скрипты `autorun_*.sh` из корня карты памяти | ❌ | ✅ запускаются при включении |
 | Журналы для диагностики на карте памяти | ❌ | ✅ `MAP\logs` |
 
@@ -433,7 +451,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 
 **Страница управления в браузере телефона**
 - Подключитесь к Wi-Fi камеры и откройте `http://192.168.1.1/map/`. В режиме точки доступа телефона адрес указан в «Сведениях об устройстве».
-- Состояние (скорость, запись, GPS, карта памяти, Wi-Fi), все настройки карты, основные настройки камеры, имя и пароль точки доступа, просмотр и загрузка видео, журналы, логотип, перезагрузка. Язык: кнопки fa / EN / RU.
+- Состояние (скорость, запись, GPS, карта памяти, Wi-Fi), все настройки карты, основные настройки камеры (с переключателем ADAS и настройками парковки), имя и пароль точки доступа, telnet, просмотр и загрузка видео, журналы, логотип, перезагрузка. Язык: кнопки fa / EN / RU.
 - Пароля нет: пользоваться может любой, кто подключён к Wi-Fi камеры. Удалять файлы нельзя.
 
 **Напоминание об отдыхе**
@@ -477,7 +495,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - Если после этого меню стало турецким (персидский был на его месте), смените язык в меню.
 
 **Журналы и сообщение о проблеме**
-- `MAP\logs` на карте памяти: `mapd_NNN.log` (карта и оповещения), `live_NNN.log` (пробки), `wifi.log`. Пришлите эту папку вместе с описанием проблемы.
+- `MAP\logs` на карте памяти: `mapd_NNN.log` (карта и оповещения), `live_NNN.log` (пробки), `wifi.log`, `logo.log`. Пришлите эту папку вместе с описанием проблемы.
 
 **Поддержка:** если проект вам пригодился, можно [поддержать его криптовалютой](#donate).
 
