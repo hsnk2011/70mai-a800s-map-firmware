@@ -25,7 +25,6 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 ### ⚠️ پیش از نصب بخوانید
 - فقط برای **A800S (DR2800)**. روی مدل دیگری فلش نکنید.
 - این فریمور رسمی نیست. با مسئولیت خودتان نصب کنید. برای برگشت یا وقتی دوربین بالا نمی‌آید، فایل بازیابی (فریمور رسمی) را فلش کنید؛ بخش «بازیابی» را ببینید.
-- همهٔ نسخه‌ها تا v2.3 روی دوربین در خودرو و در رانندگی واقعی تست شده‌اند، از جمله لوگوی روشن و خاموش شدن. v2.4 تازه است و در حال تست.
 
 ### تازه‌های v2.4
 - **هشدارهای هوشمند رانندگی (ADAS):** کلید اصلی در صفحهٔ وب. در فریمور اصلی این کلید پیش‌فرض خاموش است و تا خاموش باشد، هشدار خروج از خط، نزدیکی به خودروی جلو و حرکت خودروی جلو کار نمی‌کنند، حتی اگر خودشان روشن نشان داده شوند. صفحهٔ وب نشان می‌دهد دوربین کالیبره شده یا نه؛ کالیبره کردن از منوی دوربین.
@@ -188,7 +187,6 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### ⚠️ Read before installing
 - **A800S (DR2800) only.** Do not flash it on another model.
 - This is not official firmware; install it at your own risk. To go back, or if the camera no longer starts, flash the recovery file (the official firmware); see "Recovery".
-- Every version up to v2.3 has been tested on the camera in a car, on real drives, including the power-on and power-off logo. v2.4 is new and being tested.
 
 ### New in v2.4
 - **Driver assistance alerts (ADAS):** a main switch on the web page. The official firmware ships with it off, and while it is off the lane departure, forward collision and car-ahead-moved alerts do nothing, even when they show as on. The web page also shows whether the camera is calibrated; calibrate from the camera menu.
@@ -349,7 +347,6 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### ⚠️ Прочтите перед установкой
 - **Только для A800S (DR2800).** Не прошивайте другую модель.
 - Прошивка неофициальная; устанавливайте на свой риск. Чтобы вернуться, или если камера больше не запускается, прошейте файл восстановления (официальная прошивка); см. «Восстановление».
-- Все версии до v2.3 проверены на камере в машине, в реальных поездках, включая логотип включения и выключения. v2.4 новая и сейчас проверяется.
 
 ### Новое в v2.4
 - **Помощь водителю (ADAS):** главный переключатель на странице управления. В официальной прошивке он выключен, и пока он выключен, предупреждения о выезде из полосы, о сближении и о начале движения впереди не работают, даже если показаны включёнными. Страница также показывает, откалибрована ли камера; калибровка — в меню камеры.
