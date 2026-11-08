@@ -26,7 +26,10 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 - فقط برای **A800S (DR2800)**. روی مدل دیگری فلش نکنید.
 - این فریمور رسمی نیست. با مسئولیت خودتان نصب کنید. برای برگشت یا وقتی دوربین بالا نمی‌آید، فایل بازیابی (فریمور رسمی) را فلش کنید؛ بخش «بازیابی» را ببینید.
 
-### تازه‌های v2.4
+### تازه‌های v2.5
+- **زبان پیش‌فرض انگلیسی:** اولین بار که دوربین با این نسخه روشن می‌شود، منو، پیام‌های صوتی، نقشه، هشدارها و صفحهٔ وب انگلیسی می‌شوند. این فقط یک بار انجام می‌شود؛ هر زبانی که بعد از آن انتخاب کنید می‌ماند، حتی بعد از به‌روزرسانی‌های بعدی.
+
+### در v2.4
 - **هشدارهای هوشمند رانندگی (ADAS):** کلید اصلی در صفحهٔ وب. در فریمور اصلی این کلید پیش‌فرض خاموش است و تا خاموش باشد، هشدار خروج از خط، نزدیکی به خودروی جلو و حرکت خودروی جلو کار نمی‌کنند، حتی اگر خودشان روشن نشان داده شوند. صفحهٔ وب نشان می‌دهد دوربین کالیبره شده یا نه؛ کالیبره کردن از منوی دوربین.
 - **telnet از صفحهٔ وب** روشن و خاموش می‌شود (برای عیب‌یابی؛ پیش‌فرض خاموش).
 - **تنظیمات پارک در صفحهٔ وب** اسم و توضیح روشن دارند: «پارک: دوربین تا صبح روشن بماند»، «ضبط ضربه در پارک» و «حساسیت ضربه در رانندگی».
@@ -42,7 +45,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 ### دانلود (صفحهٔ Releases)
 | فایل | چیست |
 |---|---|
-| `70mai-A800S-map-firmware-v2.4.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.5.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip` و `iran-map-2-z16.zip` | نقشهٔ آمادهٔ ایران و دوربین‌های کنترل سرعت (۱۱٬۱۹۶ دوربین) |
 | `russia-map-*.zip` | نقشهٔ آمادهٔ روسیه (دوربین‌ها از OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | برنامهٔ ویندوز برای ساختن نقشهٔ هر کشور |
@@ -133,7 +136,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 - بعد از ۲ ساعت رانندگی پیوسته (قابل تغییر) پیام و صدای «کمی استراحت کنید»، و هر ۳۰ دقیقه تکرار. ۱۵ دقیقه توقف یعنی استراحت.
 
 **زبان‌ها**
-- زبان منو را در تنظیمات دوربین عوض کنید. «فارسی» جای «ترکی» در فهرست است. منو، پیام‌های صوتی دوربین، هشدارها، نقشه و صفحهٔ وب همه با آن عوض می‌شوند.
+- پیش‌فرض انگلیسی است. زبان منو را در تنظیمات دوربین عوض کنید. «فارسی» جای «ترکی» در فهرست است. منو، پیام‌های صوتی دوربین، هشدارها، نقشه و صفحهٔ وب همه با آن عوض می‌شوند.
 - با «زبان نقشه و صداها» می‌توانید مثلاً منو را انگلیسی و نقشه و هشدارها را فارسی کنید.
 
 **لوگوی روشن و خاموش شدن**
@@ -188,7 +191,10 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - **A800S (DR2800) only.** Do not flash it on another model.
 - This is not official firmware; install it at your own risk. To go back, or if the camera no longer starts, flash the recovery file (the official firmware); see "Recovery".
 
-### New in v2.4
+### New in v2.5
+- **English by default:** the first time the camera starts with this version, the menu, voice prompts, map, alerts and web page switch to English. This happens once; whatever language you pick afterwards stays, also after later updates.
+
+### In v2.4
 - **Driver assistance alerts (ADAS):** a main switch on the web page. The official firmware ships with it off, and while it is off the lane departure, forward collision and car-ahead-moved alerts do nothing, even when they show as on. The web page also shows whether the camera is calibrated; calibrate from the camera menu.
 - **Telnet from the web page:** turn it on or off (for troubleshooting; off by default).
 - **Parking settings on the web page** have clear names and notes: "Parking: keep the camera on all night", "Record bumps while parked" and "Bump sensitivity while driving".
@@ -204,7 +210,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### Downloads (Releases page)
 | File | What it is |
 |---|---|
-| `70mai-A800S-map-firmware-v2.4.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.5.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Ready map of Iran with its speed cameras (11,196) |
 | `russia-map-*.zip` | Ready map of Russia (cameras from OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Windows app that builds the map of any country |
@@ -295,7 +301,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - After 2 hours of continuous driving (adjustable) a message and "take a break" voice, repeated every 30 minutes. A 15-minute stop counts as a break.
 
 **Languages**
-- Change the menu language in the camera settings ("Persian" sits where Turkish was). Menu, voice prompts, alerts, map and web page all follow it.
+- English by default. Change the menu language in the camera settings ("Persian" sits where Turkish was). Menu, voice prompts, alerts, map and web page all follow it.
 - "Map and voice language" lets you have, say, an English menu with Persian map and alerts.
 
 **Power-on and power-off logo**
@@ -348,7 +354,10 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - **Только для A800S (DR2800).** Не прошивайте другую модель.
 - Прошивка неофициальная; устанавливайте на свой риск. Чтобы вернуться, или если камера больше не запускается, прошейте файл восстановления (официальная прошивка); см. «Восстановление».
 
-### Новое в v2.4
+### Новое в v2.5
+- **Английский по умолчанию:** при первом запуске камеры с этой версией меню, голосовые сообщения, карта, оповещения и страница управления переключаются на английский. Это происходит один раз; выбранный потом язык сохраняется, в том числе после следующих обновлений.
+
+### В v2.4
 - **Помощь водителю (ADAS):** главный переключатель на странице управления. В официальной прошивке он выключен, и пока он выключен, предупреждения о выезде из полосы, о сближении и о начале движения впереди не работают, даже если показаны включёнными. Страница также показывает, откалибрована ли камера; калибровка — в меню камеры.
 - **Telnet со страницы управления:** включение и выключение (для диагностики; по умолчанию выключен).
 - **Настройки парковки на странице управления** получили понятные названия и пояснения: «Парковка: камера включена всю ночь», «Запись ударов на стоянке» и «Чувствительность к ударам в движении».
@@ -364,7 +373,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### Загрузки (страница Releases)
 | Файл | Что это |
 |---|---|
-| `70mai-A800S-map-firmware-v2.4.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v2.5.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Готовая карта Ирана с камерами (11 196) |
 | `russia-map-*.zip` | Готовая карта России (камеры из OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Программа для Windows: карта любой страны |
@@ -455,7 +464,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - После 2 часов непрерывной езды (настраивается) сообщение и голос «сделайте перерыв», повтор каждые 30 минут. Остановка на 15 минут считается отдыхом.
 
 **Языки**
-- Язык меню меняется в настройках камеры («персидский» стоит на месте турецкого). Меню, голосовые сообщения, оповещения, карта и страница управления следуют ему.
+- По умолчанию английский. Язык меню меняется в настройках камеры («персидский» стоит на месте турецкого). Меню, голосовые сообщения, оповещения, карта и страница управления следуют ему.
 - «Язык карты и голоса» позволяет, например, английское меню и персидские карту и оповещения.
 
 **Логотип включения и выключения**
