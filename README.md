@@ -26,7 +26,30 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 - فقط برای **A800S (DR2800)**. روی مدل دیگری فلش نکنید.
 - این فریمور رسمی نیست. با مسئولیت خودتان نصب کنید. برای برگشت یا وقتی دوربین بالا نمی‌آید، فایل بازیابی (فریمور رسمی) را فلش کنید؛ بخش «بازیابی» را ببینید.
 
-### تازه‌های v2.5
+### تازه‌های v3.5.1
+**پارک**
+- **ضربه در پارک به‌عنوان ویدیوی پارک ذخیره می‌شود.** قبلاً دوربین گاهی بیدار شدن را روشن شدن عادی حساب می‌کرد و فیلم را کنار ویدیوهای عادی می‌گذاشت.
+- **تشخیص ضربه حساس‌تر است.** سطح‌های «ضبط ضربه در پارک»: زیاد = حساس‌ترین (ضربهٔ کوچک هم دوربین را بیدار می‌کند)، متوسط = خیلی حساس، کم = همان «زیاد» فریمور اصلی.
+- **ضبط بعد از ضربه زودتر شروع می‌شود:** دوربین دیگر منتظر بالا آمدن صفحه و منو نمی‌ماند.
+
+**فضای کارت** (گروه تازهٔ «فضای کارت» در صفحهٔ وب، و در صفحهٔ تنظیمات نقشه)
+- **سهم ویدیوی اضطراری:** ۵ / ۱۰ / ۱۶ / ۲۵ درصد کارت (۱۶ مثل فریمور اصلی).
+- **سهم ویدیوی پارک:** مشترک با ضبط عادی (مثل فریمور اصلی) یا سهم جدای ۵ / ۱۰ / ۲۰ درصد. با سهم جدا، رانندگی هیچ‌وقت ویدیوی پارک را پاک نمی‌کند.
+- **پاک شدن قدیمی‌ها وقتی سهم پر شد، یا نگه داشتن همه**، جدا برای اضطراری و پارک. با «نگه داشتن» هیچ ویدیوی قدیمیِ آن نوع پاک نمی‌شود؛ تا وقتی سهم پر است ویدیوهای تازه به‌عنوان ویدیوی عادی ذخیره می‌شوند و چیزی ضبط‌نشده نمی‌ماند.
+- باقی کارت برای ضبط عادی است. تغییرها همان لحظه اعمال می‌شوند.
+
+**پیام‌های صوتی و صفحهٔ وب**
+- **پیام‌های صوتی دوربین کار می‌کنند** («ورود به حالت پارک»، «ویدیوی پارک تازه»، صدای دکمه‌ها)؛ قبلاً هر آپدیت خاموششان می‌کرد. کلید روشن/خاموش در صفحهٔ وب ← تنظیمات سیستم. هشدارهای نقشه و دوربین سرعت به آن وابسته نیستند.
+- **تنظیمات صفحهٔ وب مثل منوی دوربین گروه‌بندی شده:** ویدیو، پایش پارک، فضای کارت، ADAS، دوربین سرعت و پلیس، نقشه و ترافیک، سیستم، لوگو، راه‌اندازی دوباره.
+- **دکمهٔ «ذخیرهٔ اضطراری»** در صفحهٔ وب، همان کار دکمهٔ اضطراری دوربین: فایل در حال ضبط از ابتدایش تا ۳۰ ثانیه بعد در پوشهٔ Event نگه داشته می‌شود.
+- هشدار و علامت دوربین سرعتِ خود فریمور اصلی دیگر کنار هشدارهای نقشه نمی‌آید.
+
+**زبان و لاگ**
+- **فارسی حالا جای چینی سنتی (繁體中文) است**؛ ترکی دوباره ترکی است.
+- **لاگ کامل** روی کارت (`MAP\logs\full`، برای هر روشن شدن یک پوشه): هر کاری که دوربین می‌کند با زمانش، برای گزارش مشکل. پیش‌فرض روشن؛ کلیدش در تنظیمات نقشه و صفحهٔ وب. رمز وای‌فای نوشته نمی‌شود.
+- اگر حافظهٔ داخلی دوربین موقع ذخیرهٔ لوگو خطای نوشتن بدهد، لوگو دوباره نوشته می‌شود.
+
+### در v2.5
 - **زبان پیش‌فرض انگلیسی:** اولین بار که دوربین با این نسخه روشن می‌شود، منو، پیام‌های صوتی، نقشه، هشدارها و صفحهٔ وب انگلیسی می‌شوند. این فقط یک بار انجام می‌شود؛ هر زبانی که بعد از آن انتخاب کنید می‌ماند، حتی بعد از به‌روزرسانی‌های بعدی.
 
 ### در v2.4
@@ -45,7 +68,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 ### دانلود (صفحهٔ Releases)
 | فایل | چیست |
 |---|---|
-| `70mai-A800S-map-firmware-v2.5.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v3.5.1.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip` و `iran-map-2-z16.zip` | نقشهٔ آمادهٔ ایران و دوربین‌های کنترل سرعت (۱۱٬۱۹۶ دوربین) |
 | `russia-map-*.zip` | نقشهٔ آمادهٔ روسیه (دوربین‌ها از OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | برنامهٔ ویندوز برای ساختن نقشهٔ هر کشور |
@@ -61,19 +84,22 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 | تابلوی سرعت مجاز و هشدار سرعت غیرمجاز | ❌ | ✅ |
 | ترافیک زنده و گزارش پلیس (ایران، از راه هات‌اسپات گوشی) | ❌ | ✅ |
 | زوم خودکار با سرعت | ❌ | ✅ |
-| صفحهٔ تنظیمات نقشه روی دوربین | ❌ | ✅ ۲۰ گزینه |
+| صفحهٔ تنظیمات نقشه روی دوربین | ❌ | ✅ ۲۵ گزینه |
 | صفحهٔ مدیریت از مرورگر گوشی | ❌ فقط اپ | ✅ وضعیت، تنظیمات، پخش و دانلود ویدیو، لاگ |
 | یادآور استراحت | ❌ | ✅ |
-| زبان فارسی در منو و پیام‌های صوتی | ❌ | ✅ جای ترکی |
+| زبان فارسی در منو و پیام‌های صوتی | ❌ | ✅ جای چینی سنتی |
 | زبان نقشه و هشدارها جدا از منو | ❌ | ✅ فارسی / English / Русский |
 | لوگوی روشن و خاموش شدن دلخواه | ❌ | ✅ هر عکسی، از صفحهٔ وب |
 | راه‌اندازی دوباره از منو | ❌ فقط دکمهٔ پاور | ✅ از نقشه و صفحهٔ وب |
 | وای‌فای | فقط AP برای اپ | AP یا اتصال به هات‌اسپات گوشی (STA)؛ تغییر از منو، نقشه یا صفحهٔ وب همان لحظه |
 | فرمت اجباری کارت وقتی فایل غیرویدیویی زیاد است | ❌ ضبط تا فرمت متوقف می‌شود | ✅ حذف شد؛ پوشهٔ نقشه مشکلی ندارد |
 | شروع دوبارهٔ ضبط بعد از پارک طولانی | گاهی شروع نمی‌شود | ✅ نگهبان ضبط |
+| حساسیت ضربه در پارک | معمولی | ✅ سطح‌های حساس‌تر |
+| سهم کارت برای ویدیوی اضطراری و پارک | ثابت: اضطراری ۱۶٪، پارک هم‌سهم ضبط عادی | ✅ قابل تنظیم؛ سهم جدا برای پارک؛ پاک شدن یا نگه داشتن قدیمی‌ها |
+| پیام‌های صوتی دوربین بعد از آپدیت | ❌ هر آپدیت خاموششان می‌کند | ✅ روشن، با کلید در صفحهٔ وب |
 | telnet روت بدون رمز | ⚠️ همیشه روشن | ✅ خاموش؛ روشن کردن از صفحهٔ وب |
 | اسکریپت `autorun_*.sh` از ریشهٔ کارت | ❌ | ✅ موقع روشن شدن اجرا می‌شود |
-| لاگ عیب‌یابی روی کارت | ❌ | ✅ `MAP\logs` |
+| لاگ عیب‌یابی روی کارت | ❌ | ✅ `MAP\logs`، لاگ کامل در `MAP\logs\full` |
 
 ### نصب
 1. **فریمور:** zip فریمور را باز کنید و `FW_DR2800.bin` و `FORCEUPD.txt` را در ریشهٔ کارت حافظه بگذارید. دوربین را با برق USB یا فندکی و **بدون زدن دکمه** روشن کنید. صفحهٔ به‌روزرسانی می‌آید و دوربین خودش دوباره روشن می‌شود.
@@ -123,20 +149,25 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 | زبان نقشه و صداها | مثل منوی دوربین، یا یک زبان ثابت | مثل منو / فارسی / English / Русский |
 | پایش پارک تمام‌شب | خاموش شدن ۵ دقیقه بعد از پارک، یا تا صبح | خاموش / روشن |
 | شروع ضبط بعد از پارک | اگر ضبط خودش شروع نشد، شروعش کند | روشن / خاموش |
+| سهم ویدیوی اضطراری | چه مقدار از کارت فقط برای ویدیوهای اضطراری | ۱۶ / ۵ / ۱۰ / ۲۵٪ |
+| پاک کردن اضطراری قدیمی | وقتی سهم پر شد قدیمی‌ترین پاک شود، یا همه بمانند | روشن / خاموش |
+| سهم ویدیوی پارک | مشترک با ضبط عادی، یا سهم جدا | مشترک / ۵ / ۱۰ / ۲۰٪ |
+| پاک کردن پارک قدیمی | با سهم جدا: قدیمی‌ترین پاک شود، یا همه بمانند | روشن / خاموش |
 | حالت وای‌فای | اپ 70mai یا اینترنت هات‌اسپات | AP / STA (همان لحظه) |
+| لاگ کامل (عیب‌یابی) | همهٔ کارهای دوربین در `MAP\logs\full` | روشن / خاموش |
 | راه‌اندازی دوباره | ضبط بسته و دوربین دوباره روشن می‌شود | دو بار OK در ۵ ثانیه |
 | اطلاعات دستگاه | نسخه، GPS، وای‌فای، ترافیک، دوربین‌ها، حافظه، آدرس صفحهٔ وب | — |
 
 **صفحهٔ مدیریت از مرورگر گوشی**
 - به وای‌فای دوربین وصل شوید و `http://192.168.1.1/map/` را باز کنید. در حالت هات‌اسپات، آدرس در «اطلاعات دستگاه» نوشته شده.
-- وضعیت (سرعت، ضبط، GPS، کارت، وای‌فای)، همهٔ تنظیمات نقشه، تنظیمات مهم دوربین (با کلید ADAS و تنظیمات پارک)، نام و رمز هات‌اسپات، telnet، پخش و دانلود ویدیوها، لاگ‌ها، لوگو، راه‌اندازی دوباره. زبان با دکمه‌های فا / EN / RU.
+- وضعیت (سرعت، ضبط، GPS، کارت، وای‌فای)، همهٔ تنظیمات نقشه، تنظیمات مهم دوربین (با کلید ADAS، تنظیمات پارک، فضای کارت و پیام‌های صوتی؛ گروه‌بندی‌شده مثل منوی دوربین)، دکمهٔ «ذخیرهٔ اضطراری»، نام و رمز هات‌اسپات، telnet، پخش و دانلود ویدیوها، لاگ‌ها، لوگو، راه‌اندازی دوباره. زبان با دکمه‌های فا / EN / RU.
 - رمز ورود ندارد؛ هر کس به وای‌فای دوربین وصل باشد به آن دسترسی دارد. حذف فایل ندارد.
 
 **یادآور استراحت**
 - بعد از ۲ ساعت رانندگی پیوسته (قابل تغییر) پیام و صدای «کمی استراحت کنید»، و هر ۳۰ دقیقه تکرار. ۱۵ دقیقه توقف یعنی استراحت.
 
 **زبان‌ها**
-- پیش‌فرض انگلیسی است. زبان منو را در تنظیمات دوربین عوض کنید. «فارسی» جای «ترکی» در فهرست است. منو، پیام‌های صوتی دوربین، هشدارها، نقشه و صفحهٔ وب همه با آن عوض می‌شوند.
+- پیش‌فرض انگلیسی است. زبان منو را در تنظیمات دوربین عوض کنید. «فارسی» جای «چینی سنتی» (繁體中文) در فهرست است. منو، پیام‌های صوتی دوربین، هشدارها، نقشه و صفحهٔ وب همه با آن عوض می‌شوند.
 - با «زبان نقشه و صداها» می‌توانید مثلاً منو را انگلیسی و نقشه و هشدارها را فارسی کنید.
 
 **لوگوی روشن و خاموش شدن**
@@ -161,6 +192,16 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 **کارت حافظه**
 - دوربین دیگر به‌خاطر پوشهٔ `MAP` فرمت اجباری نمی‌خواهد. اگر خودتان از منو فرمت کنید، `MAP` هم پاک می‌شود و باید دوباره کپی کنید.
 
+**فضای کارت برای ویدیوی اضطراری و پارک** (صفحهٔ وب ← فضای کارت، یا تنظیمات نقشه)
+- فریمور اصلی ۱۶٪ کارت را به ویدیوی اضطراری می‌دهد و ویدیوهای پارک با ضبط عادی هم‌سهم‌اند، پس رانندگی قدیمی‌ترین ویدیوهای پارک را هم پاک می‌کند.
+- «سهم ویدیوی اضطراری»: ۵، ۱۰، ۱۶ یا ۲۵ درصد. «سهم ویدیوی پارک»: مشترک با عادی، یا سهم جدای ۵، ۱۰ یا ۲۰ درصد؛ با سهم جدا رانندگی هیچ‌وقت ویدیوی پارک را پاک نمی‌کند.
+- «پاک کردن ... قدیمی»: روشن = وقتی سهم پر شد قدیمی‌ترین پاک می‌شود؛ خاموش = هیچ‌کدام پاک نمی‌شود و تا سهم پر است ویدیوهای تازه به‌عنوان ویدیوی عادی ذخیره می‌شوند.
+- باقی کارت برای ضبط عادی است. تغییر همان لحظه اعمال می‌شود.
+
+**پارک**
+- سطح «ضبط ضربه در پارک» در این فریمور حساس‌تر است: زیاد = حساس‌ترین، متوسط = خیلی حساس، کم = همان «زیاد» فریمور اصلی. حساس‌تر یعنی بیدار شدن بیشتر (باد، کامیون، بستن در ماشین کناری) و مصرف بیشتر باتری.
+- ضربه‌ای که در ۵ دقیقهٔ اول بعد از خاموش کردن ماشین بیاید، مثل فریمور اصلی ویدیوی عادی ضبط می‌شود.
+
 **سازندهٔ نقشه (ویندوز)**
 - `70mai-MapBuilder.exe` را اجرا کنید (نصب لازم نیست). کشور یا منطقه، بیشترین زوم، زبان نام خیابان‌ها و کارت حافظه را انتخاب کنید و «ساختن نقشه» را بزنید.
 - آخرین دادهٔ OpenStreetMap دانلود، نقشه روی کامپیوتر ساخته و در `MAP` کارت نوشته می‌شود. دوربین‌های سرعت از OpenStreetMap می‌آیند.
@@ -170,10 +211,10 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 - فایل `70mai-A800S-official-2.2.31ww-recovery.zip` فریمور رسمی 2.2.31ww برای بازیابی است.
 - روش: ویدیوهای لازم را بردارید؛ پوشهٔ `MAP`، `config.txt` و `autorun_*.sh` را از کارت پاک کنید، چون فریمور رسمی با بیش از ۵۰۰ مگابایت فایل غیرویدیویی فرمت می‌خواهد (بهتر: کارت را FAT32 فرمت کنید)؛ `FW_DR2800.bin` و `FORCEUPD.txt` را در ریشهٔ کارت بگذارید و دوربین را با برق USB یا فندکی و بدون زدن دکمه روشن کنید.
 - حتی وقتی دوربین دیگر بالا نمی‌آید هم کار می‌کند: این فریمور بوت‌لودر و کرنل رسمی را دست نمی‌زند و آپدیت از کارت پیش از سیستم اجرا می‌شود.
-- اگر بعدش منو ترکی شد (فارسی جای ترکی بود)، زبان را از منو عوض کنید.
+- اگر بعدش منو چینی شد (فارسی جای چینی سنتی بود)، زبان را از منو عوض کنید.
 
 **لاگ و گزارش مشکل**
-- `MAP\logs` روی کارت: `mapd_NNN.log` (نقشه و هشدارها)، `live_NNN.log` (ترافیک)، `wifi.log`، `logo.log`. برای گزارش مشکل همین پوشه را بفرستید.
+- `MAP\logs` روی کارت: `mapd_NNN.log` (نقشه و هشدارها)، `live_NNN.log` (ترافیک)، `wifi.log`، `logo.log`، و لاگ کامل در `MAP\logs\full` (برای هر روشن شدن یک پوشه). برای گزارش مشکل همین پوشه را بفرستید.
 
 **حمایت:** اگر این پروژه به کارتان آمد، می‌توانید با رمزارز [حمایت کنید](#donate).
 
@@ -191,7 +232,30 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - **A800S (DR2800) only.** Do not flash it on another model.
 - This is not official firmware; install it at your own risk. To go back, or if the camera no longer starts, flash the recovery file (the official firmware); see "Recovery".
 
-### New in v2.5
+### New in v3.5.1
+**Parking**
+- **A knock while parked is saved as a parking video.** Before, the camera sometimes took the wake-up for a normal start and saved the clip with the normal videos.
+- **More sensitive knock detection.** The levels of "Impact recording when parked" now mean: High = most sensitive (a small knock wakes the camera), Medium = very sensitive, Low = the official firmware's High.
+- **Recording after a knock starts sooner:** the camera no longer waits for its screen and menu to load first.
+
+**Card space** (new "Card space" group on the web page, also on the map's settings page)
+- **Emergency video share:** 5 / 10 / 16 / 25 % of the card (16 % as in the official firmware).
+- **Parking video share:** shared with normal recording (as in the official firmware), or a share of its own: 5 / 10 / 20 %. With its own share, driving never overwrites parking videos.
+- **Overwrite old videos when full, or keep them,** separately for emergency and parking. "Keep": no old video of that kind is ever deleted; while its share is full, new ones are saved as normal videos, so nothing goes unrecorded.
+- Normal recording gets the rest of the card. Changes apply at once.
+
+**Voice prompts and web page**
+- **Camera voice prompts work** ("entering parking mode", "new parking video", button sounds); every firmware update used to turn them off. On/off switch on the web page under System settings. Map and speed-camera alerts don't depend on it.
+- **Web page settings are grouped like the camera menu:** Video, Parking surveillance, Card space, ADAS, Speed cameras and police, Map and traffic, System, Logo, Restart.
+- **"Emergency save" button** on the web page: does what the camera's emergency button does (keeps the current clip from its start to 30 seconds later in the Event folder).
+- The official firmware's own speed-camera alert and icon no longer appear next to the map's alerts.
+
+**Languages and logs**
+- **Persian now sits where Traditional Chinese (繁體中文) was;** Turkish is Turkish again.
+- **Full debug log** on the card (`MAP\logs\full`, one folder per power-on): everything the camera does, with times, for reporting problems. On by default; switch on the map's settings page and the web page. The Wi-Fi password is never written.
+- Saving the power-on logo writes it again if the camera's internal memory reports a write error.
+
+### In v2.5
 - **English by default:** the first time the camera starts with this version, the menu, voice prompts, map, alerts and web page switch to English. This happens once; whatever language you pick afterwards stays, also after later updates.
 
 ### In v2.4
@@ -210,7 +274,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### Downloads (Releases page)
 | File | What it is |
 |---|---|
-| `70mai-A800S-map-firmware-v2.5.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v3.5.1.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Ready map of Iran with its speed cameras (11,196) |
 | `russia-map-*.zip` | Ready map of Russia (cameras from OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Windows app that builds the map of any country |
@@ -226,19 +290,22 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Speed-limit sign and overspeed warning | ❌ | ✅ |
 | Live traffic and police reports (Iran, through a phone hotspot) | ❌ | ✅ |
 | Auto zoom by speed | ❌ | ✅ |
-| Map settings page on the camera | ❌ | ✅ 20 options |
+| Map settings page on the camera | ❌ | ✅ 25 options |
 | Admin page in the phone's browser | ❌ app only | ✅ status, settings, play and download videos, logs |
 | Rest reminder | ❌ | ✅ |
-| Persian menu and voice prompts | ❌ | ✅ in place of Turkish |
+| Persian menu and voice prompts | ❌ | ✅ in place of Traditional Chinese |
 | Map and alert language apart from the menu | ❌ | ✅ Persian / English / Russian |
 | Your own power-on and power-off logo | ❌ | ✅ any picture, from the web page |
 | Restart from the menu | ❌ power button only | ✅ from the map and the web page |
 | Wi-Fi | AP for the app only | AP, or join a phone hotspot (STA); switch from the menu, map or web page at once |
 | Forced card format when there are many non-video files | ❌ recording stops until you format | ✅ removed; the map folder is fine |
 | Recording restarts after long parking | sometimes it doesn't | ✅ recording guard |
+| Parking knock sensitivity | standard | ✅ more sensitive levels |
+| Card space for emergency and parking videos | fixed: emergency 16 %, parking shares normal recording's space | ✅ adjustable; parking can have its own share; overwrite or keep old videos |
+| Camera voice prompts after an update | ❌ every update turns them off | ✅ on, with a switch on the web page |
 | Root telnet without a password | ⚠️ always on | ✅ off; turn on from the web page |
 | `autorun_*.sh` scripts from the card root | ❌ | ✅ run at power-on |
-| Diagnostic logs on the card | ❌ | ✅ `MAP\logs` |
+| Diagnostic logs on the card | ❌ | ✅ `MAP\logs`, full log in `MAP\logs\full` |
 
 ### Install
 1. **Firmware:** unzip it and put `FW_DR2800.bin` and `FORCEUPD.txt` in the root of the memory card. Power the camera from USB or the car socket **without pressing any button**. The update screen appears and the camera restarts by itself.
@@ -288,20 +355,25 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Map and voice language | Like the camera menu, or a fixed language | like menu / Persian / English / Russian |
 | All-night parking monitor | Power off 5 min after parking, or stay on | off / on |
 | Start recording after parking | Starts recording if it didn't start by itself | on / off |
+| Emergency video share | How much of the card is kept for emergency videos only | 16 / 5 / 10 / 25 % |
+| Overwrite old emergency videos | When the share is full, delete the oldest, or keep them all | on / off |
+| Parking video share | Shared with normal recording, or a share of its own | shared / 5 / 10 / 20 % |
+| Overwrite old parking videos | With its own share: delete the oldest, or keep them all | on / off |
 | Wi-Fi mode | 70mai app or hotspot internet | AP / STA (at once) |
+| Full debug log | Everything the camera does, in `MAP\logs\full` | on / off |
 | Restart | Closes the recording and restarts the camera | OK twice within 5 s |
 | Device info | Version, GPS, Wi-Fi, traffic, cameras, memory, web page address | — |
 
 **Admin page in your phone's browser**
 - Join the camera's Wi-Fi and open `http://192.168.1.1/map/`. On a hotspot, the address is in "Device info".
-- Status (speed, recording, GPS, card, Wi-Fi), all map settings, the main camera settings (with the ADAS switch and parking settings), hotspot name and password, telnet, play and download videos, logs, logo, restart. Language: the fa / EN / RU buttons.
+- Status (speed, recording, GPS, card, Wi-Fi), all map settings, the main camera settings (with the ADAS switch, parking settings, card space and voice prompts; grouped like the camera menu), an "Emergency save" button, hotspot name and password, telnet, play and download videos, logs, logo, restart. Language: the fa / EN / RU buttons.
 - No password: anyone on the camera's Wi-Fi can use it. It can't delete files.
 
 **Rest reminder**
 - After 2 hours of continuous driving (adjustable) a message and "take a break" voice, repeated every 30 minutes. A 15-minute stop counts as a break.
 
 **Languages**
-- English by default. Change the menu language in the camera settings ("Persian" sits where Turkish was). Menu, voice prompts, alerts, map and web page all follow it.
+- English by default. Change the menu language in the camera settings ("Persian" sits where Traditional Chinese, 繁體中文, was). Menu, voice prompts, alerts, map and web page all follow it.
 - "Map and voice language" lets you have, say, an English menu with Persian map and alerts.
 
 **Power-on and power-off logo**
@@ -326,6 +398,16 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 **Memory card**
 - The `MAP` folder no longer triggers a forced format. If you format from the menu yourself, `MAP` is erased too; copy it again.
 
+**Card space for emergency and parking videos** (web page → Card space, or the map's settings)
+- The official firmware keeps 16 % of the card for emergency videos, and parking videos share normal recording's space, so driving also deletes the oldest parking videos.
+- "Emergency video share": 5, 10, 16 or 25 %. "Parking video share": shared with normal, or its own 5, 10 or 20 %; with its own share, driving never deletes a parking video.
+- "Overwrite old ...": on = when the share is full the oldest is deleted; off = none is deleted, and while the share is full new videos are saved as normal videos.
+- Normal recording gets the rest of the card. Changes apply at once.
+
+**Parking**
+- The levels of "Impact recording when parked" are more sensitive in this firmware: High = most sensitive, Medium = very sensitive, Low = the official firmware's High. More sensitive means more wake-ups (wind, trucks, a door next to you) and more battery use.
+- A knock in the first 5 minutes after you switch the car off is recorded as a normal video, as in the official firmware.
+
 **Map Builder (Windows)**
 - Run `70mai-MapBuilder.exe` (no install). Pick a country or region, the highest zoom, the street-name language and the memory card, then "Build the map".
 - It downloads the latest OpenStreetMap data, draws the map on the PC and writes it to `MAP` on the card. Speed cameras come from OpenStreetMap.
@@ -335,10 +417,10 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - `70mai-A800S-official-2.2.31ww-recovery.zip` is the official 2.2.31ww firmware for recovery.
 - How: save the videos you need; delete `MAP`, `config.txt` and `autorun_*.sh` from the card, because the official firmware asks to format when there are over 500 MB of non-video files (better: format the card as FAT32); put `FW_DR2800.bin` and `FORCEUPD.txt` in the card root and power the camera from USB or the car socket without pressing any button.
 - It works even when the camera no longer starts: this firmware leaves the official boot loader and kernel untouched, and the card update runs before the system.
-- If the menu is in Turkish afterwards (Persian used that slot), change the language in the menu.
+- If the menu is in Chinese afterwards (Persian used the Traditional Chinese slot), change the language in the menu.
 
 **Logs and reporting a problem**
-- `MAP\logs` on the card: `mapd_NNN.log` (map and alerts), `live_NNN.log` (traffic), `wifi.log`, `logo.log`. Send this folder with a problem report.
+- `MAP\logs` on the card: `mapd_NNN.log` (map and alerts), `live_NNN.log` (traffic), `wifi.log`, `logo.log`, and the full log in `MAP\logs\full` (one folder per power-on). Send this folder with a problem report.
 
 **Support:** if this project is useful to you, you can [donate in crypto](#donate).
 
@@ -354,7 +436,30 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - **Только для A800S (DR2800).** Не прошивайте другую модель.
 - Прошивка неофициальная; устанавливайте на свой риск. Чтобы вернуться, или если камера больше не запускается, прошейте файл восстановления (официальная прошивка); см. «Восстановление».
 
-### Новое в v2.5
+### Новое в v3.5.1
+**Парковка**
+- **Удар на стоянке сохраняется как видео парковки.** Раньше камера иногда принимала пробуждение за обычное включение и клала ролик к обычным видео.
+- **Удары распознаются чувствительнее.** Уровни «Запись ударов на стоянке» теперь: Высокая = самая чувствительная (будит даже лёгкий удар), Средняя = очень чувствительная, Низкая = «Высокая» официальной прошивки.
+- **Запись после удара начинается раньше:** камера больше не ждёт загрузки экрана и меню.
+
+**Место на карте памяти** (новая группа «Место на карте» на странице управления, а также в настройках карты)
+- **Доля экстренных видео:** 5 / 10 / 16 / 25 % карты (16 % как в официальной прошивке).
+- **Доля видео парковки:** общая с обычной записью (как в официальной прошивке) или своя: 5 / 10 / 20 %. Со своей долей езда никогда не стирает видео парковки.
+- **Стирать старые видео при заполнении или хранить их** — отдельно для экстренных и парковки. «Хранить»: старые видео этого вида не стираются; пока доля заполнена, новые сохраняются как обычные видео, так что ничего не теряется.
+- Обычной записи достаётся остальная часть карты. Изменения применяются сразу.
+
+**Голосовые сообщения и страница управления**
+- **Голосовые сообщения камеры работают** («переход в режим парковки», «новое видео парковки», звуки кнопок); раньше каждое обновление их выключало. Переключатель — на странице управления в разделе «Система». Оповещения карты и о камерах скорости от него не зависят.
+- **Настройки на странице управления сгруппированы как в меню камеры:** Видео, Мониторинг парковки, Место на карте, ADAS, Камеры скорости и полиция, Карта и пробки, Система, Логотип, Перезагрузка.
+- **Кнопка «Экстренное сохранение»** на странице управления: то же, что экстренная кнопка камеры (текущий ролик с начала и до 30 секунд после сохраняется в папке Event).
+- Собственное оповещение и значок камер скорости официальной прошивки больше не появляются рядом с оповещениями карты.
+
+**Языки и журналы**
+- **Персидский теперь стоит на месте китайского традиционного (繁體中文);** турецкий снова турецкий.
+- **Полный журнал** на карте памяти (`MAP\logs\full`, папка на каждое включение): всё, что делает камера, со временем — для сообщений о проблемах. По умолчанию включён; переключатель в настройках карты и на странице управления. Пароль Wi-Fi не записывается.
+- Логотип включения записывается заново, если внутренняя память камеры сообщает об ошибке записи.
+
+### В v2.5
 - **Английский по умолчанию:** при первом запуске камеры с этой версией меню, голосовые сообщения, карта, оповещения и страница управления переключаются на английский. Это происходит один раз; выбранный потом язык сохраняется, в том числе после следующих обновлений.
 
 ### В v2.4
@@ -373,7 +478,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### Загрузки (страница Releases)
 | Файл | Что это |
 |---|---|
-| `70mai-A800S-map-firmware-v2.5.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v3.5.1.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Готовая карта Ирана с камерами (11 196) |
 | `russia-map-*.zip` | Готовая карта России (камеры из OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Программа для Windows: карта любой страны |
@@ -389,19 +494,22 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Знак ограничения скорости и предупреждение о превышении | ❌ | ✅ |
 | Пробки и сообщения о полиции (Иран, через точку доступа телефона) | ❌ | ✅ |
 | Автомасштаб по скорости | ❌ | ✅ |
-| Страница настроек карты на камере | ❌ | ✅ 20 настроек |
+| Страница настроек карты на камере | ❌ | ✅ 25 настроек |
 | Страница управления в браузере телефона | ❌ только приложение | ✅ состояние, настройки, просмотр и загрузка видео, журналы |
 | Напоминание об отдыхе | ❌ | ✅ |
-| Персидское меню и голосовые сообщения | ❌ | ✅ вместо турецкого |
+| Персидское меню и голосовые сообщения | ❌ | ✅ вместо китайского традиционного |
 | Язык карты и оповещений отдельно от меню | ❌ | ✅ персидский / английский / русский |
 | Свой логотип включения и выключения | ❌ | ✅ любая картинка, со страницы управления |
 | Перезагрузка из меню | ❌ только кнопкой питания | ✅ с карты и со страницы управления |
 | Wi-Fi | только точка доступа для приложения | точка доступа или подключение к телефону (STA); переключение из меню, карты или страницы сразу |
 | Принудительное форматирование карты при большом объёме не-видео файлов | ❌ запись стоит до форматирования | ✅ убрано; папка карты не мешает |
 | Запись после долгой стоянки | иногда не начинается | ✅ страж записи |
+| Чувствительность к ударам на стоянке | обычная | ✅ более чувствительные уровни |
+| Место на карте для экстренных видео и парковки | фиксировано: экстренные 16 %, парковка делит место с обычной записью | ✅ настраивается; своя доля для парковки; стирать или хранить старые видео |
+| Голосовые сообщения камеры после обновления | ❌ каждое обновление их выключает | ✅ включены, переключатель на странице управления |
 | Root telnet без пароля | ⚠️ всегда включён | ✅ выключен; включается со страницы управления |
 | Скрипты `autorun_*.sh` из корня карты памяти | ❌ | ✅ запускаются при включении |
-| Журналы для диагностики на карте памяти | ❌ | ✅ `MAP\logs` |
+| Журналы для диагностики на карте памяти | ❌ | ✅ `MAP\logs`, полный журнал в `MAP\logs\full` |
 
 ### Установка
 1. **Прошивка:** распакуйте архив и положите `FW_DR2800.bin` и `FORCEUPD.txt` в корень карты памяти. Включите камеру от USB или прикуривателя **не нажимая кнопок**. Появится экран обновления, и камера перезапустится сама.
@@ -451,20 +559,25 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Язык карты и голоса | Как в меню камеры или постоянный | как в меню / персидский / английский / русский |
 | Парковочный режим всю ночь | Выключение через 5 минут стоянки или работа всю ночь | выкл / вкл |
 | Запуск записи после стоянки | Запускает запись, если она не началась сама | вкл / выкл |
+| Доля экстренных видео | Сколько места карты только для экстренных видео | 16 / 5 / 10 / 25 % |
+| Стирать старые экстренные | При заполнении стирать самые старые или хранить все | вкл / выкл |
+| Доля видео парковки | Общая с обычной записью или своя | общая / 5 / 10 / 20 % |
+| Стирать старые парковочные | Со своей долей: стирать самые старые или хранить все | вкл / выкл |
 | Режим Wi-Fi | Приложение 70mai или интернет телефона | AP / STA (сразу) |
+| Полный журнал | Всё, что делает камера, в `MAP\logs\full` | вкл / выкл |
 | Перезагрузка | Закрывает запись и перезапускает камеру | OK дважды за 5 с |
 | Сведения об устройстве | Версия, GPS, Wi-Fi, пробки, камеры, память, адрес страницы | — |
 
 **Страница управления в браузере телефона**
 - Подключитесь к Wi-Fi камеры и откройте `http://192.168.1.1/map/`. В режиме точки доступа телефона адрес указан в «Сведениях об устройстве».
-- Состояние (скорость, запись, GPS, карта памяти, Wi-Fi), все настройки карты, основные настройки камеры (с переключателем ADAS и настройками парковки), имя и пароль точки доступа, telnet, просмотр и загрузка видео, журналы, логотип, перезагрузка. Язык: кнопки fa / EN / RU.
+- Состояние (скорость, запись, GPS, карта памяти, Wi-Fi), все настройки карты, основные настройки камеры (с переключателем ADAS, настройками парковки, местом на карте и голосовыми сообщениями; сгруппированы как в меню камеры), кнопка «Экстренное сохранение», имя и пароль точки доступа, telnet, просмотр и загрузка видео, журналы, логотип, перезагрузка. Язык: кнопки fa / EN / RU.
 - Пароля нет: пользоваться может любой, кто подключён к Wi-Fi камеры. Удалять файлы нельзя.
 
 **Напоминание об отдыхе**
 - После 2 часов непрерывной езды (настраивается) сообщение и голос «сделайте перерыв», повтор каждые 30 минут. Остановка на 15 минут считается отдыхом.
 
 **Языки**
-- По умолчанию английский. Язык меню меняется в настройках камеры («персидский» стоит на месте турецкого). Меню, голосовые сообщения, оповещения, карта и страница управления следуют ему.
+- По умолчанию английский. Язык меню меняется в настройках камеры («персидский» стоит на месте китайского традиционного, 繁體中文). Меню, голосовые сообщения, оповещения, карта и страница управления следуют ему.
 - «Язык карты и голоса» позволяет, например, английское меню и персидские карту и оповещения.
 
 **Логотип включения и выключения**
@@ -489,6 +602,16 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 **Карта памяти**
 - Папка `MAP` больше не вызывает принудительное форматирование. Если вы сами отформатируете карту из меню, `MAP` тоже удалится; скопируйте её снова.
 
+**Место на карте для экстренных видео и парковки** (страница управления → Место на карте, или настройки карты)
+- Официальная прошивка отводит экстренным видео 16 % карты, а видео парковки делят место с обычной записью, поэтому при езде стираются и самые старые видео парковки.
+- «Доля экстренных видео»: 5, 10, 16 или 25 %. «Доля видео парковки»: общая с обычной или своя 5, 10 или 20 %; со своей долей езда никогда не стирает видео парковки.
+- «Стирать старые ...»: вкл = при заполнении стирается самое старое; выкл = ничего не стирается, и пока доля заполнена, новые видео сохраняются как обычные.
+- Обычной записи достаётся остальное. Изменения применяются сразу.
+
+**Парковка**
+- Уровни «Запись ударов на стоянке» в этой прошивке чувствительнее: Высокая = самая чувствительная, Средняя = очень чувствительная, Низкая = «Высокая» официальной прошивки. Чем чувствительнее, тем чаще пробуждения (ветер, грузовики, дверь соседней машины) и больше расход батареи.
+- Удар в первые 5 минут после выключения машины записывается как обычное видео, как в официальной прошивке.
+
 **Map Builder (Windows)**
 - Запустите `70mai-MapBuilder.exe` (установка не нужна). Выберите страну или регион, наибольший масштаб, язык названий улиц и карту памяти, затем «Собрать карту».
 - Программа загружает свежие данные OpenStreetMap, рисует карту на ПК и записывает её в `MAP` на карте памяти. Камеры скорости берутся из OpenStreetMap.
@@ -498,10 +621,10 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - `70mai-A800S-official-2.2.31ww-recovery.zip` — официальная прошивка 2.2.31ww для восстановления.
 - Как: сохраните нужные видео; удалите с карты `MAP`, `config.txt` и `autorun_*.sh`, потому что официальная прошивка требует форматирования при более чем 500 МБ не-видео файлов (лучше отформатировать карту в FAT32); положите `FW_DR2800.bin` и `FORCEUPD.txt` в корень и включите камеру от USB или прикуривателя, не нажимая кнопок.
 - Работает, даже если камера больше не запускается: эта прошивка не трогает официальные загрузчик и ядро, а обновление с карты идёт до загрузки системы.
-- Если после этого меню стало турецким (персидский был на его месте), смените язык в меню.
+- Если после этого меню стало китайским (персидский был на месте китайского традиционного), смените язык в меню.
 
 **Журналы и сообщение о проблеме**
-- `MAP\logs` на карте памяти: `mapd_NNN.log` (карта и оповещения), `live_NNN.log` (пробки), `wifi.log`, `logo.log`. Пришлите эту папку вместе с описанием проблемы.
+- `MAP\logs` на карте памяти: `mapd_NNN.log` (карта и оповещения), `live_NNN.log` (пробки), `wifi.log`, `logo.log` и полный журнал в `MAP\logs\full` (папка на каждое включение). Пришлите эту папку вместе с описанием проблемы.
 
 **Поддержка:** если проект вам пригодился, можно [поддержать его криптовалютой](#donate).
 
