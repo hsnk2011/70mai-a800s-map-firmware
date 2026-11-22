@@ -26,7 +26,14 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 - فقط برای **A800S (DR2800)**. روی مدل دیگری فلش نکنید.
 - این فریمور رسمی نیست. با مسئولیت خودتان نصب کنید. برای برگشت یا وقتی دوربین بالا نمی‌آید، فایل بازیابی (فریمور رسمی) را فلش کنید؛ بخش «بازیابی» را ببینید.
 
-### تازه‌های v3.5.1
+### تازه‌های v3.6
+- **تنظیمات بعد از آپدیت فریمور می‌مانند.** هر آپدیت فریمور (رسمی هم) حافظهٔ تنظیمات دوربین را پاک می‌کند. حالا دوربین تنظیمات منو، وای‌فای، زبان و لوگوهای دلخواه را در پوشهٔ `MAP\settings_backup` روی کارت نگه می‌دارد و بعد از آپدیت خودش برمی‌گرداند. از آپدیت بعدی کار می‌کند: نصب خود v3.6 هنوز یک بار تنظیمات را به پیش‌فرض برمی‌گرداند.
+- **آدرس صفحهٔ پروژه** (به‌روزرسانی، راهنما، گزارش مشکل) در «اطلاعات دستگاه» نقشه، صفحهٔ وب، لاگ کامل و `README.txt` داخل zip.
+- zip فریمور راهنماهای صفحهٔ وب، زبان‌ها، هات‌اسپات آیفون و لاگ کامل را هم دارد (فارسی).
+- **ذخیرهٔ لوگو:** خطای نوشتن حافظهٔ داخلی که کمی دیرتر می‌رسد هم دیده می‌شود و لوگو دوباره نوشته می‌شود.
+- «شروع زودتر ضبط بعد از ضربه» (v3.5.1) برداشته شد: اثری نداشت، چون دوربین تا فهرست فایل‌های کارت را نخوانده (حدود ۶ ثانیه) ضبط را شروع نمی‌کند.
+
+### در v3.5.1
 **پارک**
 - **ضربه در پارک به‌عنوان ویدیوی پارک ذخیره می‌شود.** قبلاً دوربین گاهی بیدار شدن را روشن شدن عادی حساب می‌کرد و فیلم را کنار ویدیوهای عادی می‌گذاشت.
 - **تشخیص ضربه حساس‌تر است.** سطح‌های «ضبط ضربه در پارک»: زیاد = حساس‌ترین (ضربهٔ کوچک هم دوربین را بیدار می‌کند)، متوسط = خیلی حساس، کم = همان «زیاد» فریمور اصلی.
@@ -68,7 +75,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 ### دانلود (صفحهٔ Releases)
 | فایل | چیست |
 |---|---|
-| `70mai-A800S-map-firmware-v3.5.1.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v3.6.zip` | فریمور: `FW_DR2800.bin` و `FORCEUPD.txt`، راهنمای نصب و راهنماها |
 | `iran-map-1-z5-z15.zip` و `iran-map-2-z16.zip` | نقشهٔ آمادهٔ ایران و دوربین‌های کنترل سرعت (۱۱٬۱۹۶ دوربین) |
 | `russia-map-*.zip` | نقشهٔ آمادهٔ روسیه (دوربین‌ها از OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | برنامهٔ ویندوز برای ساختن نقشهٔ هر کشور |
@@ -99,6 +106,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 | پیام‌های صوتی دوربین بعد از آپدیت | ❌ هر آپدیت خاموششان می‌کند | ✅ روشن، با کلید در صفحهٔ وب |
 | telnet روت بدون رمز | ⚠️ همیشه روشن | ✅ خاموش؛ روشن کردن از صفحهٔ وب |
 | اسکریپت `autorun_*.sh` از ریشهٔ کارت | ❌ | ✅ موقع روشن شدن اجرا می‌شود |
+| تنظیمات بعد از آپدیت فریمور | ❌ به پیش‌فرض برمی‌گردد | ✅ از پشتیبان روی کارت برمی‌گردد |
 | لاگ عیب‌یابی روی کارت | ❌ | ✅ `MAP\logs`، لاگ کامل در `MAP\logs\full` |
 
 ### نصب
@@ -207,6 +215,9 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 - آخرین دادهٔ OpenStreetMap دانلود، نقشه روی کامپیوتر ساخته و در `MAP` کارت نوشته می‌شود. دوربین‌های سرعت از OpenStreetMap می‌آیند.
 - کشورهای بزرگ (مثل روسیه) هم ساخته می‌شوند؛ چند ساعت طول می‌کشد و چند ده گیگابایت جای خالی روی کامپیوتر می‌خواهد. اگر کامپیوتر وسط کار خاموش شد، دوباره «ساختن نقشه» را بزنید: زوم‌های تمام‌شده نگه داشته می‌شوند.
 
+**پشتیبان تنظیمات**
+- دوربین تنظیمات منو، وای‌فای، زبان و لوگوهای دلخواه را در `MAP\settings_backup` روی کارت نگه می‌دارد (هر تغییر چند ثانیه بعد) و بعد از آپدیت فریمور خودش برمی‌گرداند. پشتیبان روی همان کارت است: با کارت دیگر یا بعد از پاک کردن `MAP` چیزی برنمی‌گردد.
+
 **بازیابی و برگشت به فریمور رسمی**
 - فایل `70mai-A800S-official-2.2.31ww-recovery.zip` فریمور رسمی 2.2.31ww برای بازیابی است.
 - روش: ویدیوهای لازم را بردارید؛ پوشهٔ `MAP`، `config.txt` و `autorun_*.sh` را از کارت پاک کنید، چون فریمور رسمی با بیش از ۵۰۰ مگابایت فایل غیرویدیویی فرمت می‌خواهد (بهتر: کارت را FAT32 فرمت کنید)؛ `FW_DR2800.bin` و `FORCEUPD.txt` را در ریشهٔ کارت بگذارید و دوربین را با برق USB یا فندکی و بدون زدن دکمه روشن کنید.
@@ -215,6 +226,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 
 **لاگ و گزارش مشکل**
 - `MAP\logs` روی کارت: `mapd_NNN.log` (نقشه و هشدارها)، `live_NNN.log` (ترافیک)، `wifi.log`، `logo.log`، و لاگ کامل در `MAP\logs\full` (برای هر روشن شدن یک پوشه). برای گزارش مشکل همین پوشه را بفرستید.
+- گزارش مشکل: [Issues](../../issues) همین صفحه.
 
 **حمایت:** اگر این پروژه به کارتان آمد، می‌توانید با رمزارز [حمایت کنید](#donate).
 
@@ -232,7 +244,14 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - **A800S (DR2800) only.** Do not flash it on another model.
 - This is not official firmware; install it at your own risk. To go back, or if the camera no longer starts, flash the recovery file (the official firmware); see "Recovery".
 
-### New in v3.5.1
+### New in v3.6
+- **Settings survive firmware updates.** Every firmware update (the official one too) erases the camera's settings memory. The camera now keeps its menu settings, Wi-Fi settings, language and custom logos in `MAP\settings_backup` on the card and puts them back by itself after an update. It works from the next update on: installing v3.6 itself still resets the settings once.
+- **The project's address** (updates, guide, bug reports) is on the map's Device info page, the web page, the full log and in `README.txt` in the zip.
+- The firmware zip also has the guides for the web page, languages, iPhone hotspot and full log (in Persian).
+- **Saving the logo:** a write error from the internal memory that arrives a little late is now caught too, and the logo is written again.
+- "Recording after a knock starts sooner" (v3.5.1) is removed: it had no effect, because the camera starts recording only once it has read the card's file list (about 6 s).
+
+### In v3.5.1
 **Parking**
 - **A knock while parked is saved as a parking video.** Before, the camera sometimes took the wake-up for a normal start and saved the clip with the normal videos.
 - **More sensitive knock detection.** The levels of "Impact recording when parked" now mean: High = most sensitive (a small knock wakes the camera), Medium = very sensitive, Low = the official firmware's High.
@@ -274,7 +293,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### Downloads (Releases page)
 | File | What it is |
 |---|---|
-| `70mai-A800S-map-firmware-v3.5.1.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v3.6.zip` | The firmware: `FW_DR2800.bin` and `FORCEUPD.txt`, install guide and guides |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Ready map of Iran with its speed cameras (11,196) |
 | `russia-map-*.zip` | Ready map of Russia (cameras from OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Windows app that builds the map of any country |
@@ -305,6 +324,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Camera voice prompts after an update | ❌ every update turns them off | ✅ on, with a switch on the web page |
 | Root telnet without a password | ⚠️ always on | ✅ off; turn on from the web page |
 | `autorun_*.sh` scripts from the card root | ❌ | ✅ run at power-on |
+| Settings after a firmware update | ❌ back to defaults | ✅ restored from a backup on the card |
 | Diagnostic logs on the card | ❌ | ✅ `MAP\logs`, full log in `MAP\logs\full` |
 
 ### Install
@@ -413,6 +433,9 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - It downloads the latest OpenStreetMap data, draws the map on the PC and writes it to `MAP` on the card. Speed cameras come from OpenStreetMap.
 - Big countries (like Russia) work too; they take hours and tens of GB of free space on the PC. If the PC turns off part way, press "Build the map" again: finished zoom levels are kept.
 
+**Settings backup**
+- The camera keeps its menu settings, Wi-Fi settings, language and custom logos in `MAP\settings_backup` on the card (each change a few seconds later) and puts them back by itself after a firmware update. The backup is on that card: with another card, or after deleting `MAP`, nothing comes back.
+
 **Recovery and going back to the official firmware**
 - `70mai-A800S-official-2.2.31ww-recovery.zip` is the official 2.2.31ww firmware for recovery.
 - How: save the videos you need; delete `MAP`, `config.txt` and `autorun_*.sh` from the card, because the official firmware asks to format when there are over 500 MB of non-video files (better: format the card as FAT32); put `FW_DR2800.bin` and `FORCEUPD.txt` in the card root and power the camera from USB or the car socket without pressing any button.
@@ -421,6 +444,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 
 **Logs and reporting a problem**
 - `MAP\logs` on the card: `mapd_NNN.log` (map and alerts), `live_NNN.log` (traffic), `wifi.log`, `logo.log`, and the full log in `MAP\logs\full` (one folder per power-on). Send this folder with a problem report.
+- Report problems here: [Issues](../../issues).
 
 **Support:** if this project is useful to you, you can [donate in crypto](#donate).
 
@@ -436,7 +460,14 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - **Только для A800S (DR2800).** Не прошивайте другую модель.
 - Прошивка неофициальная; устанавливайте на свой риск. Чтобы вернуться, или если камера больше не запускается, прошейте файл восстановления (официальная прошивка); см. «Восстановление».
 
-### Новое в v3.5.1
+### Новое в v3.6
+- **Настройки сохраняются после обновления прошивки.** Любое обновление прошивки (и официальное) стирает память настроек камеры. Теперь камера хранит настройки меню, Wi-Fi, язык и свои логотипы в `MAP\settings_backup` на карте памяти и сама возвращает их после обновления. Работает со следующего обновления: установка самой v3.6 ещё один раз сбросит настройки.
+- **Адрес проекта** (обновления, инструкции, сообщения об ошибках) — в «Сведениях об устройстве» на карте, на веб-странице, в полном журнале и в `README.txt` в архиве.
+- В архиве прошивки также есть инструкции по веб-странице, языкам, точке доступа iPhone и полному журналу (на персидском).
+- **Сохранение логотипа:** ошибка записи во внутреннюю память, которая приходит с небольшой задержкой, теперь тоже замечается, и логотип записывается заново.
+- «Запись после удара начинается раньше» (v3.5.1) убрано: это не давало эффекта, камера начинает запись только после чтения списка файлов на карте (около 6 с).
+
+### В v3.5.1
 **Парковка**
 - **Удар на стоянке сохраняется как видео парковки.** Раньше камера иногда принимала пробуждение за обычное включение и клала ролик к обычным видео.
 - **Удары распознаются чувствительнее.** Уровни «Запись ударов на стоянке» теперь: Высокая = самая чувствительная (будит даже лёгкий удар), Средняя = очень чувствительная, Низкая = «Высокая» официальной прошивки.
@@ -478,7 +509,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 ### Загрузки (страница Releases)
 | Файл | Что это |
 |---|---|
-| `70mai-A800S-map-firmware-v3.5.1.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt` |
+| `70mai-A800S-map-firmware-v3.6.zip` | Прошивка: `FW_DR2800.bin` и `FORCEUPD.txt`, инструкция по установке и руководства |
 | `iran-map-1-z5-z15.zip`, `iran-map-2-z16.zip` | Готовая карта Ирана с камерами (11 196) |
 | `russia-map-*.zip` | Готовая карта России (камеры из OpenStreetMap) |
 | `70mai-MapBuilder-windows.zip` | Программа для Windows: карта любой страны |
@@ -509,6 +540,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 | Голосовые сообщения камеры после обновления | ❌ каждое обновление их выключает | ✅ включены, переключатель на странице управления |
 | Root telnet без пароля | ⚠️ всегда включён | ✅ выключен; включается со страницы управления |
 | Скрипты `autorun_*.sh` из корня карты памяти | ❌ | ✅ запускаются при включении |
+| Настройки после обновления прошивки | ❌ сбрасываются | ✅ возвращаются из копии на карте |
 | Журналы для диагностики на карте памяти | ❌ | ✅ `MAP\logs`, полный журнал в `MAP\logs\full` |
 
 ### Установка
@@ -617,6 +649,9 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 - Программа загружает свежие данные OpenStreetMap, рисует карту на ПК и записывает её в `MAP` на карте памяти. Камеры скорости берутся из OpenStreetMap.
 - Большие страны (например, Россия) тоже собираются; это занимает часы и десятки ГБ свободного места на ПК. Если ПК выключился посреди работы, снова нажмите «Собрать карту»: готовые масштабы сохраняются.
 
+**Копия настроек**
+- Камера хранит настройки меню, Wi-Fi, язык и свои логотипы в `MAP\settings_backup` на карте памяти (каждое изменение через несколько секунд) и сама возвращает их после обновления прошивки. Копия лежит на этой карте: с другой картой или после удаления `MAP` ничего не вернётся.
+
 **Восстановление и возврат к официальной прошивке**
 - `70mai-A800S-official-2.2.31ww-recovery.zip` — официальная прошивка 2.2.31ww для восстановления.
 - Как: сохраните нужные видео; удалите с карты `MAP`, `config.txt` и `autorun_*.sh`, потому что официальная прошивка требует форматирования при более чем 500 МБ не-видео файлов (лучше отформатировать карту в FAT32); положите `FW_DR2800.bin` и `FORCEUPD.txt` в корень и включите камеру от USB или прикуривателя, не нажимая кнопок.
@@ -625,6 +660,7 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 
 **Журналы и сообщение о проблеме**
 - `MAP\logs` на карте памяти: `mapd_NNN.log` (карта и оповещения), `live_NNN.log` (пробки), `wifi.log`, `logo.log` и полный журнал в `MAP\logs\full` (папка на каждое включение). Пришлите эту папку вместе с описанием проблемы.
+- Сообщить о проблеме: [Issues](../../issues).
 
 **Поддержка:** если проект вам пригодился, можно [поддержать его криптовалютой](#donate).
 
