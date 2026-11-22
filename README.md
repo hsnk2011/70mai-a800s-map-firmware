@@ -28,7 +28,6 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, based on the o
 
 ### تازه‌های v3.6
 - **تنظیمات بعد از آپدیت فریمور می‌مانند.** هر آپدیت فریمور (رسمی هم) حافظهٔ تنظیمات دوربین را پاک می‌کند. حالا دوربین تنظیمات منو، وای‌فای، زبان و لوگوهای دلخواه را در پوشهٔ `MAP\settings_backup` روی کارت نگه می‌دارد و بعد از آپدیت خودش برمی‌گرداند. از آپدیت بعدی کار می‌کند: نصب خود v3.6 هنوز یک بار تنظیمات را به پیش‌فرض برمی‌گرداند.
-- **آدرس صفحهٔ پروژه** (به‌روزرسانی، راهنما، گزارش مشکل) در «اطلاعات دستگاه» نقشه، صفحهٔ وب، لاگ کامل و `README.txt` داخل zip.
 - zip فریمور راهنماهای صفحهٔ وب، زبان‌ها، هات‌اسپات آیفون و لاگ کامل را هم دارد (فارسی).
 - **ذخیرهٔ لوگو:** خطای نوشتن حافظهٔ داخلی که کمی دیرتر می‌رسد هم دیده می‌شود و لوگو دوباره نوشته می‌شود.
 - «شروع زودتر ضبط بعد از ضربه» (v3.5.1) برداشته شد: اثری نداشت، چون دوربین تا فهرست فایل‌های کارت را نخوانده (حدود ۶ ثانیه) ضبط را شروع نمی‌کند.
@@ -246,7 +245,6 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 
 ### New in v3.6
 - **Settings survive firmware updates.** Every firmware update (the official one too) erases the camera's settings memory. The camera now keeps its menu settings, Wi-Fi settings, language and custom logos in `MAP\settings_backup` on the card and puts them back by itself after an update. It works from the next update on: installing v3.6 itself still resets the settings once.
-- **The project's address** (updates, guide, bug reports) is on the map's Device info page, the web page, the full log and in `README.txt` in the zip.
 - The firmware zip also has the guides for the web page, languages, iPhone hotspot and full log (in Persian).
 - **Saving the logo:** a write error from the internal memory that arrives a little late is now caught too, and the logo is written again.
 - "Recording after a knock starts sooner" (v3.5.1) is removed: it had no effect, because the camera starts recording only once it has read the card's file list (about 6 s).
@@ -462,7 +460,6 @@ An unofficial firmware for the **70mai A800S (DR2800)** dash cam, built on the o
 
 ### Новое в v3.6
 - **Настройки сохраняются после обновления прошивки.** Любое обновление прошивки (и официальное) стирает память настроек камеры. Теперь камера хранит настройки меню, Wi-Fi, язык и свои логотипы в `MAP\settings_backup` на карте памяти и сама возвращает их после обновления. Работает со следующего обновления: установка самой v3.6 ещё один раз сбросит настройки.
-- **Адрес проекта** (обновления, инструкции, сообщения об ошибках) — в «Сведениях об устройстве» на карте, на веб-странице, в полном журнале и в `README.txt` в архиве.
 - В архиве прошивки также есть инструкции по веб-странице, языкам, точке доступа iPhone и полному журналу (на персидском).
 - **Сохранение логотипа:** ошибка записи во внутреннюю память, которая приходит с небольшой задержкой, теперь тоже замечается, и логотип записывается заново.
 - «Запись после удара начинается раньше» (v3.5.1) убрано: это не давало эффекта, камера начинает запись только после чтения списка файлов на карте (около 6 с).
